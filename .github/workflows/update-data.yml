@@ -35,15 +35,12 @@ jobs:
           git config --global user.name 'Github Actions Workflow'
           git config --global user.email "10224219+mistereman22@users.noreply.github.com"
           git commit -am "Automated update of item and monster data"
-      - name: Version app
+      - name: Update version
+        id: update_version
         if: ${{ steps.check_changes.outputs.changes == 'true' }}
-        run: npm version patch
-      - name: Output version tag
-        if: ${{ steps.check_changes.outputs.changes == 'true' }}
-        id: get_tag
         run: |
-          latest_tag=$(git describe --tags --abbrev=0)
-          echo "GIT_TAG=$latest_tag" >> $GITHUB_ENV
+          version_tag=$(npm version patch)
+          echo "version_tag=$version_tag" >> $GITHUB_ENV
       - name: Push new version
         if: ${{ steps.check_changes.outputs.changes == 'true' }}
         run: git push --follow-tags
@@ -53,7 +50,7 @@ jobs:
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GIT_TAG: ${{ steps.get_tag.outputs.GIT_TAG }}
+          GIT_TAG: ${{ steps.update_version.outputs.version_tag }}
         with:
           tag_name: ${{ env.GIT_TAG }}
           release_name: Release ${{ env.GIT_TAG }}
