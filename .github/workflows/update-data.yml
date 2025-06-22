@@ -1,0 +1,60 @@
+name: Update data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * 4"
+
+jobs:
+  update-enums:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org/
+      - name: Install Dependencies
+        run: npm ci
+      - name: Update data from json dumps
+        run: npm run update-enums
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if [[ -n $(git status --porcelain) ]]; then
+            echo "changes=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Build
+        if: ${{ steps.check_changes.outputs.changes == 'true' }}
+        run: npm run build
+      - name: Commit updates
+        if: ${{ steps.check_changes.outputs.changes == 'true' }}
+        run: |
+          git config --global user.name 'Automated'
+          git commit -am "Automated report"
+          git push
+      - name: Version app
+        if: ${{ steps.check_changes.outputs.changes == 'true' }}
+        run: npm version patch
+      - name: Get the version tag
+        if: ${{ steps.check_changes.outputs.changes == 'true' }}
+        id: get_tag
+        run: |
+          latest_tag=$(git describe --tags --abbrev=0)
+          echo "GIT_TAG=$latest_tag" >> $GITHUB_ENV
+      - name: Commit version
+        if: ${{ steps.check_changes.outputs.changes == 'true' }}
+        run: git push --follow-tags
+      - name: Create Release
+        if: ${{ steps.check_changes.outputs.changes == 'true' }}
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_TAG: ${{ steps.get_tag.outputs.GIT_TAG }}
+        with:
+          tag_name: ${{ env.GIT_TAG }}
+          release_name: Release ${{ env.GIT_TAG }}
+          body: Automatic release for updated item and monster definitions
+          draft: false
+          prerelease: false
