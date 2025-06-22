@@ -7,6 +7,8 @@ on:
 
 jobs:
   update-enums:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -36,13 +38,13 @@ jobs:
       - name: Version app
         if: ${{ steps.check_changes.outputs.changes == 'true' }}
         run: npm version patch
-      - name: Get the version tag
+      - name: Output version tag
         if: ${{ steps.check_changes.outputs.changes == 'true' }}
         id: get_tag
         run: |
           latest_tag=$(git describe --tags --abbrev=0)
           echo "GIT_TAG=$latest_tag" >> $GITHUB_ENV
-      - name: Commit version
+      - name: Push new version
         if: ${{ steps.check_changes.outputs.changes == 'true' }}
         run: git push --follow-tags
       - name: Create Release
