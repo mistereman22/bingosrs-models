@@ -31,6 +31,7 @@ jobs:
         if: ${{ steps.check_changes.outputs.changes == 'true' }}
         run: |
           git config --global user.name 'Github Actions Workflow'
+          git config --global user.email "10224219+mistereman22@users.noreply.github.com"
           git commit -am "Automated update of item and monster data"
       - name: Version app
         if: ${{ steps.check_changes.outputs.changes == 'true' }}
