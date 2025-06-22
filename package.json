@@ -24,8 +24,7 @@
     "clean": "rimraf dist",
     "build": "tsc",
     "lint:fix": "eslint --fix",
-    "generate-schema": "quicktype items.json -l schema -o items.schema.json",
-    "generate-code": "quicktype -s schema items.schema.json -o items.ts --lang ts"
+    "update-enums": "node scripts/update-enums.js"
   },
   "repository": {
     "type": "git",

@@ -30,9 +30,8 @@ jobs:
       - name: Commit updates
         if: ${{ steps.check_changes.outputs.changes == 'true' }}
         run: |
-          git config --global user.name 'Automated'
-          git commit -am "Automated report"
-          git push
+          git config --global user.name 'Github Actions Workflow'
+          git commit -am "Automated update of item and monster data"
       - name: Version app
         if: ${{ steps.check_changes.outputs.changes == 'true' }}
         run: npm version patch
