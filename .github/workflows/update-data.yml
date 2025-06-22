@@ -60,6 +60,7 @@ jobs:
           draft: false
           prerelease: false
   publish-npm:
+    needs: [update-data]
     name: Publish release
     if: ${{ needs.update-data.outputs.changes == 'true' }}
     runs-on: ubuntu-latest
