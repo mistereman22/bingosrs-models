@@ -66,6 +66,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Need to explicitly checkout main so that it gets commits from the update job
+          ref: 'main'
       - uses: actions/setup-node@v4
         with:
           node-version: 20
