@@ -1,5 +1,4 @@
 export enum EItem {
-  DWARF_REMAINS = 0,
   TOOLKIT = 1,
   CANNONBALL = 2,
   NULODIONS_NOTES = 3,

@@ -300,7 +300,7 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
 
     // Misc shared
     [EItem.DRAGON_CHAINBODY__2]: [EMonster.KALPHITE_QUEEN, EMonster.THERMONUCLEAR_SMOKE_DEVIL, EMonster.CHOKE_DEVIL, EMonster.NUCLEAR_SMOKE_DEVIL, EMonster.DUST_DEVIL, EMonster.SMOKE_DEVIL],
-    [EItem.DRAGON_2H_SWORD]: [EMonster.CHAOS_ELEMENTAL, EMonster.SCORPIA, EMonster.CALLISTO__2, EMonster.KALPHITE_QUEEN, EMonster.VENENATIS__2, EMonster.VETION__2, EMonster.ARTIO, EMonster.CALVARION, EMonster.SPINDEL],
+    [EItem.DRAGON_2H_SWORD]: [EMonster.CHAOS_ELEMENTAL, EMonster.SCORPIA, EMonster.CALLISTO, EMonster.KALPHITE_QUEEN, EMonster.VENENATIS__2, EMonster.VETION, EMonster.ARTIO, EMonster.CALVARION, EMonster.SPINDEL],
     [EItem.DRAGON_PICKAXE]: [EMonster.CHAOS_ELEMENTAL, EMonster.CALLISTO__2, EMonster.KALPHITE_QUEEN, EMonster.VENENATIS__2, EMonster.VETION__2, EMonster.ARTIO, EMonster.CALVARION, EMonster.SPINDEL, EMonster.KING_BLACK_DRAGON],
 
 

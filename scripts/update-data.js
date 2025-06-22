@@ -2,7 +2,16 @@ import fetch from 'node-fetch';
 import * as fs from "node:fs";
 import * as path from "node:path";
 
-async function writeEnum(filePath, enumName, dataUrl) {
+function saveFile(filePath, content) {
+    const dir = path.dirname(filePath);
+    if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+    }
+
+    fs.writeFileSync(filePath, content, 'utf8');
+}
+
+async function writeEnum(enumPath, dataPath, enumName, dataUrl, omitFn) {
     const response = await fetch(
         dataUrl,
         {
@@ -51,17 +60,13 @@ async function writeEnum(filePath, enumName, dataUrl) {
 
     enumContent += '}\n';
 
-    const enumDir = path.dirname(filePath);
-    if (!fs.existsSync(enumDir)) {
-        fs.mkdirSync(enumDir, { recursive: true });
-    }
-
-    fs.writeFileSync(filePath, enumContent, 'utf8');
+    saveFile(enumPath, enumContent)
+    saveFile(dataPath, JSON.stringify(data))
 }
 
 async function main() {
-    await writeEnum('./src/enums/items.ts', 'EItem', 'https://raw.githubusercontent.com/DayV-git/osrsreboxed-db/data/docs/items-summary.json')
-    await writeEnum('./src/enums/monsters.ts', 'EMonster', 'https://raw.githubusercontent.com/DayV-git/osrsreboxed-db/data/docs/monsters-complete.json')
+    await writeEnum('./src/enums/items.ts', './src/data/items.json', 'EItem', 'https://raw.githubusercontent.com/DayV-git/osrsreboxed-db/data/docs/items-summary.json')
+    await writeEnum('./src/enums/monsters.ts', './src/data/monsters.json', 'EMonster', 'https://raw.githubusercontent.com/DayV-git/osrsreboxed-db/data/docs/npcs-summary.json')
 }
 
 await main()

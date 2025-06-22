@@ -22,7 +22,7 @@ jobs:
       - name: Install Dependencies
         run: npm ci
       - name: Update data from json dumps
-        run: npm run update-enums
+        run: npm run update-data
       - name: Check for changes
         id: check_changes
         run: |

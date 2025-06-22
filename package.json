@@ -24,7 +24,7 @@
     "clean": "rimraf dist",
     "build": "tsc",
     "lint:fix": "eslint --fix",
-    "update-enums": "node scripts/update-enums.js"
+    "update-data": "node scripts/update-data.js"
   },
   "repository": {
     "type": "git",
