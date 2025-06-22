@@ -46,21 +46,25 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.BANDOS_TASSETS]: [],
     [EItem.BANDOS_BOOTS]: [],
     [EItem.BANDOS_HILT]: [],
+    [EItem.PET_GENERAL_GRAARDOR]: [],
 
     [EItem.ARMADYL_CROSSBOW]: [],
     [EItem.SARADOMIN_HILT]: [],
     [EItem.SARADOMIN_SWORD]: [],
     [EItem.SARADOMINS_LIGHT]: [],
+    [EItem.PET_ZILYANA]: [],
 
     [EItem.ARMADYL_HELMET]: [],
     [EItem.ARMADYL_CHESTPLATE]: [],
     [EItem.ARMADYL_CHAINSKIRT]: [],
     [EItem.ARMADYL_HILT]: [],
+    [EItem.PET_KREEARRA]: [],
 
     [EItem.STAFF_OF_THE_DEAD]: [],
     [EItem.ZAMORAKIAN_SPEAR]: [],
     [EItem.STEAM_BATTLESTAFF]: [],
     [EItem.ZAMORAK_HILT]: [],
+    [EItem.PET_KRIL_TSUTSAROTH]: [],
 
     [EItem.GODSWORD_SHARD_1]: [EMonster.GENERAL_GRAARDOR, EMonster.COMMANDER_ZILYANA, EMonster.KREEARRA, EMonster.KRIL_TSUTSAROTH],
     [EItem.GODSWORD_SHARD_2]: [EMonster.GENERAL_GRAARDOR, EMonster.COMMANDER_ZILYANA, EMonster.KREEARRA, EMonster.KRIL_TSUTSAROTH],
@@ -72,18 +76,23 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.TORVA_FULL_HELM_DAMAGED]: [],
     [EItem.TORVA_PLATEBODY_DAMAGED]: [],
     [EItem.TORVA_PLATELEGS_DAMAGED]: [],
+    [EItem.NEXLING]: [],
 
-    // TODO: Figure out unsired drops
     // Abyssal Sire
     [EItem.JAR_OF_MIASMA]: [],
+    [EItem.BLUDGEON_AXON]: [],
+    [EItem.BLUDGEON_CLAW]: [],
+    [EItem.BLUDGEON_SPINE]: [],
     [EItem.ABYSSAL_DAGGER]: [EMonster.ABYSSAL_SIRE, EMonster.ABYSSAL_DEMON],
     [EItem.ABYSSAL_WHIP]: [EMonster.ABYSSAL_SIRE, EMonster.ABYSSAL_DEMON],
+    [EItem.ABYSSAL_ORPHAN]: [],
 
     // Alchemical Hydra
     [EItem.HYDRAS_CLAW]: [],
     [EItem.HYDRA_TAIL]: [],
     [EItem.HYDRA_LEATHER]: [],
     [EItem.JAR_OF_CHEMICALS]: [],
+    [EItem.IKKLE_HYDRA]: [],
 
     // TODO: Amoxliatl
 
@@ -128,22 +137,26 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.TYRANNICAL_RING]: [EMonster.CALLISTO, EMonster.ARTIO],
     [EItem.CLAWS_OF_CALLISTO]: [EMonster.CALLISTO, EMonster.ARTIO],
     [EItem.VOIDWAKER_HILT]: [EMonster.CALLISTO, EMonster.ARTIO],
+    [EItem.CALLISTO_CUB]: [],
 
     // Venenatis and Spindel
     [EItem.TREASONOUS_RING]: [EMonster.VENENATIS, EMonster.SPINDEL],
     [EItem.FANGS_OF_VENENATIS]: [EMonster.VENENATIS, EMonster.SPINDEL],
     [EItem.VOIDWAKER_GEM]: [EMonster.VENENATIS, EMonster.SPINDEL],
+    [EItem.VENENATIS_SPIDERLING]: [],
 
     // Vet'ion and Calvar'ion
     [EItem.RING_OF_THE_GODS]: [EMonster.VETION, EMonster.CALVARION],
     [EItem.SKULL_OF_VETION]: [EMonster.VETION, EMonster.CALVARION],
     [EItem.VOIDWAKER_BLADE]: [EMonster.VETION, EMonster.CALVARION],
+    [EItem.VETION_JR]: [],
 
     // Cerberus
     [EItem.ETERNAL_CRYSTAL]: [],
     [EItem.PEGASIAN_CRYSTAL]: [],
     [EItem.PRIMORDIAL_CRYSTAL]: [],
     [EItem.SMOULDERING_STONE]: [EMonster.CERBERUS, EMonster.HELLHOUND],
+    [EItem.HELLPUPPY]: [],
 
     // Chaos Fanatic
     [EItem.ODIUM_SHARD_1]: [],
@@ -156,6 +169,7 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     // Scorpia
     [EItem.ODIUM_SHARD_3]: [],
     [EItem.MALEDICTION_SHARD_3]: [],
+    [EItem.SCORPIAS_OFFSPRING]: [],
 
 
     // Corporeal Beast
@@ -164,6 +178,7 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.ARCANE_SIGIL]: [],
     [EItem.HOLY_ELIXIR]: [],
     [EItem.SPIRIT_SHIELD]: [],
+    [EItem.PET_DARK_CORE]: [],
 
     // Dagannoth Kings
     [EItem.BERSERKER_RING]: [],
@@ -172,6 +187,9 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.WARRIOR_RING]: [],
     [EItem.SEERCULL]: [],
     [EItem.MUD_BATTLESTAFF]: [],
+    [EItem.PET_DAGANNOTH_PRIME]: [],
+    [EItem.PET_DAGANNOTH_SUPREME]: [],
+    [EItem.PET_DAGANNOTH_REX]: [],
 
     // Fortis Colosseum
     [EItem.SUNFIRE_FANATIC_CUIRASS]: [],
@@ -179,17 +197,20 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.SUNFIRE_FANATIC_HELM]: [],
     [EItem.ECHO_CRYSTAL]: [],
     [EItem.TONALZTICS_OF_RALOS_UNCHARGED]: [],
+    [EItem.SMOL_HEREDIT]: [],
 
     // The Gauntlet
     [EItem.CRYSTAL_ARMOUR_SEED]: [],
     [EItem.CRYSTAL_WEAPON_SEED]: [],
     [EItem.ENHANCED_CRYSTAL_WEAPON_SEED]: [],
+    [EItem.YOUNGLLEF]: [],
 
     // Grotesque Guardians
     [EItem.BLACK_TOURMALINE_CORE]: [],
     [EItem.GRANITE_GLOVES]: [],
     [EItem.GRANITE_RING]: [],
     [EItem.GRANITE_HAMMER]: [],
+    [EItem.NOON]: [],
 
     // Hespori
     [EItem.BOTTOMLESS_COMPOST_BUCKET]: [],
@@ -199,14 +220,17 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
 
     // Kalphite Queen
     [EItem.JAR_OF_SAND]: [],
+    [EItem.KALPHITE_PRINCESS]: [],
 
     // King Black Dragon
     [EItem.DRACONIC_VISAGE]: [EMonster.KING_BLACK_DRAGON],
+    [EItem.PRINCE_BLACK_DRAGON]: [],
 
     // Kraken
     [EItem.KRAKEN_TENTACLE]: [EMonster.KRAKEN, EMonster.CAVE_KRAKEN],
     [EItem.TRIDENT_OF_THE_SEAS_FULL]: [],
     [EItem.JAR_OF_DIRT]: [],
+    [EItem.PET_KRAKEN]: [],
 
     // Moons of Peril
     [EItem.ECLIPSE_MOON_CHESTPLATE]: [],
@@ -234,6 +258,7 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.HARMONISED_ORB]: [],
     [EItem.ELDRITCH_ORB]: [],
     [EItem.JAR_OF_DREAMS]: [],
+    [EItem.LITTLE_NIGHTMARE]: [],
 
     // Obor
     [EItem.HILL_GIANT_CLUB]: [],
@@ -247,12 +272,14 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     // Sarachnis
     [EItem.JAR_OF_EYES]: [],
     [EItem.SARACHNIS_CUDGEL]: [],
+    [EItem.SRARACHA]: [],
 
     // Scurrius
     // TODO: Missing scurrius spine
 
     // Skotizo
     [EItem.JAR_OF_DARKNESS]: [],
+    [EItem.SKOTOS]: [],
 
     // Thermonuclear Smoke Devil
     [EItem.OCCULT_NECKLACE]: [EMonster.THERMONUCLEAR_SMOKE_DEVIL, EMonster.SMOKE_DEVIL],
@@ -260,7 +287,7 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.JAR_OF_SMOKE]: [],
 
     // Vorkath
-    [EItem.SKELETAL_VISAGE]: [EMonster.VORKATH],
+    [EItem.SKELETAL_VISAGE]: [EMonster.VORKATH__2],
     [EItem.JAR_OF_DECAY]: [],
     [EItem.DRAGONBONE_NECKLACE]: [],
 
@@ -272,9 +299,9 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
 
 
     // Misc shared
-    [EItem.DRAGON_CHAINBODY]: [EMonster.KALPHITE_QUEEN, EMonster.THERMONUCLEAR_SMOKE_DEVIL, EMonster.CHOKE_DEVIL, EMonster.NUCLEAR_SMOKE_DEVIL, EMonster.DUST_DEVIL, EMonster.SMOKE_DEVIL],
-    [EItem.DRAGON_2H_SWORD]: [EMonster.CHAOS_ELEMENTAL, EMonster.SCORPIA, EMonster.CALLISTO, EMonster.KALPHITE_QUEEN, EMonster.VENENATIS, EMonster.VETION, EMonster.ARTIO, EMonster.CALVARION, EMonster.SPINDEL],
-    [EItem.DRAGON_PICKAXE]: [EMonster.CHAOS_ELEMENTAL, EMonster.CALLISTO, EMonster.KALPHITE_QUEEN, EMonster.VENENATIS, EMonster.VETION, EMonster.ARTIO, EMonster.CALVARION, EMonster.SPINDEL, EMonster.KING_BLACK_DRAGON],
+    [EItem.DRAGON_CHAINBODY__2]: [EMonster.KALPHITE_QUEEN, EMonster.THERMONUCLEAR_SMOKE_DEVIL, EMonster.CHOKE_DEVIL, EMonster.NUCLEAR_SMOKE_DEVIL, EMonster.DUST_DEVIL, EMonster.SMOKE_DEVIL],
+    [EItem.DRAGON_2H_SWORD]: [EMonster.CHAOS_ELEMENTAL, EMonster.SCORPIA, EMonster.CALLISTO__2, EMonster.KALPHITE_QUEEN, EMonster.VENENATIS__2, EMonster.VETION__2, EMonster.ARTIO, EMonster.CALVARION, EMonster.SPINDEL],
+    [EItem.DRAGON_PICKAXE]: [EMonster.CHAOS_ELEMENTAL, EMonster.CALLISTO__2, EMonster.KALPHITE_QUEEN, EMonster.VENENATIS__2, EMonster.VETION__2, EMonster.ARTIO, EMonster.CALVARION, EMonster.SPINDEL, EMonster.KING_BLACK_DRAGON],
 
 
 
