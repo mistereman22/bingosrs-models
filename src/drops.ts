@@ -1,9 +1,12 @@
-import { EItem } from "./enums/items";
+import {EItem} from "./enums/items";
 import {EMonster} from "./enums/monsters";
 
 export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     // Raids
     // COX
+    [EItem.OLMLET]: [],
+    [EItem.METAMORPHIC_DUST]: [],
+    [EItem.TWISTED_ANCESTRAL_COLOUR_KIT]: [],
     [EItem.ARCANE_PRAYER_SCROLL]: [],
     [EItem.DEXTEROUS_PRAYER_SCROLL]: [],
     [EItem.DINHS_BULWARK]: [],
@@ -16,6 +19,10 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.TWISTED_BOW]: [],
 
     // TOB
+    [EItem.LIL_ZIK]: [],
+    [EItem.SANGUINE_DUST]: [],
+    [EItem.HOLY_ORNAMENT_KIT]: [],
+    [EItem.SANGUINE_ORNAMENT_KIT]: [],
     [EItem.AVERNIC_DEFENDER_HILT]: [],
     [EItem.JUSTICIAR_LEGGUARDS]: [],
     [EItem.JUSTICIAR_CHESTGUARD]: [],
@@ -25,6 +32,7 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.SCYTHE_OF_VITUR_UNCHARGED]: [],
 
     // TOA
+    [EItem.TUMEKENS_GUARDIAN]: [],
     [EItem.LIGHTBEARER]: [],
     [EItem.OSMUMTENS_FANG]: [],
     [EItem.ELIDINIS_WARD]: [],
@@ -34,6 +42,25 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.TUMEKENS_SHADOW_UNCHARGED]: [],
 
     // DT2
+    // Duke Sucellus
+    [EItem.BARON]: [],
+    [EItem.EYE_OF_THE_DUKE]: [],
+    [EItem.MAGUS_VESTIGE]: [],
+
+    // The Leviathan
+    [EItem.LILVIATHAN]: [],
+    [EItem.LEVIATHANS_LURE]: [],
+    [EItem.VENATOR_VESTIGE]: [],
+
+    // Vardorvis
+    [EItem.BUTCH]: [],
+    [EItem.EXECUTIONERS_AXE_HEAD]: [],
+    [EItem.ULTOR_VESTIGE]: [],
+
+    // The Whisperer
+    [EItem.WISP]: [],
+    [EItem.SIRENS_STAFF]: [],
+    [EItem.BELLATOR_VESTIGE]: [],
 
     [EItem.VIRTUS_MASK]: [EMonster.VARDORVIS, EMonster.THE_WHISPERER, EMonster.DUKE_SUCELLUS, EMonster.THE_LEVIATHAN],
     [EItem.VIRTUS_ROBE_TOP]: [EMonster.VARDORVIS, EMonster.THE_WHISPERER, EMonster.DUKE_SUCELLUS, EMonster.THE_LEVIATHAN],
@@ -86,6 +113,8 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.ABYSSAL_DAGGER]: [EMonster.ABYSSAL_SIRE, EMonster.ABYSSAL_DEMON],
     [EItem.ABYSSAL_WHIP]: [EMonster.ABYSSAL_SIRE, EMonster.ABYSSAL_DEMON],
     [EItem.ABYSSAL_ORPHAN]: [],
+    [EItem.UNSIRED]: [],
+    [EItem.ABYSSAL_HEAD]: [],
 
     // Alchemical Hydra
     [EItem.HYDRAS_CLAW]: [],
@@ -93,10 +122,24 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.HYDRA_LEATHER]: [],
     [EItem.JAR_OF_CHEMICALS]: [],
     [EItem.IKKLE_HYDRA]: [],
+    [EItem.HYDRAS_FANG]: [],
+    [EItem.HYDRAS_EYE]: [],
+    [EItem.HYDRAS_HEART]: [],
+    [EItem.ALCHEMICAL_HYDRA_HEADS]: [],
 
-    // TODO: Amoxliatl
+    // Amoxliatl
+    [EItem.MOXI]: [],
+    [EItem.GLACIAL_TEMOTLI]: [],
+    [EItem.PENDANT_OF_ATES_INERT]: [],
 
-    // TODO: Araxxor untradeables
+    // Araxxor
+    [EItem.NID]: [],
+    [EItem.ARAXYTE_FANG]: [],
+    [EItem.NOXIOUS_POINT]: [],
+    [EItem.NOXIOUS_BLADE]: [],
+    [EItem.NOXIOUS_POMMEL]: [],
+    [EItem.ARAXYTE_HEAD]: [],
+    [EItem.JAR_OF_VENOM]: [],
 
     // Barrows
     [EItem.KARILS_COIF]: [],
@@ -156,11 +199,13 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.PEGASIAN_CRYSTAL]: [],
     [EItem.PRIMORDIAL_CRYSTAL]: [],
     [EItem.SMOULDERING_STONE]: [EMonster.CERBERUS, EMonster.HELLHOUND],
+    [EItem.JAR_OF_SOULS]: [],
     [EItem.HELLPUPPY]: [],
 
     // Chaos Fanatic
     [EItem.ODIUM_SHARD_1]: [],
     [EItem.MALEDICTION_SHARD_1]: [],
+    [EItem.PET_CHAOS_ELEMENTAL]: [EMonster.CHAOS_ELEMENTAL, EMonster.CHAOS_FANATIC],
 
     // Crazy Archaeologist
     [EItem.ODIUM_SHARD_2]: [],
@@ -216,14 +261,17 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.BOTTOMLESS_COMPOST_BUCKET]: [],
 
     // The Hueycoatl
-    // TODO: Missing Huey drops
+    [EItem.HUBERTE]: [],
+    [EItem.DRAGON_HUNTER_WAND]: [],
+    [EItem.TOME_OF_EARTH]: [],
+    [EItem.HUEYCOATL_HIDE]: [],
 
     // Kalphite Queen
     [EItem.JAR_OF_SAND]: [],
     [EItem.KALPHITE_PRINCESS]: [],
 
     // King Black Dragon
-    [EItem.DRACONIC_VISAGE]: [EMonster.KING_BLACK_DRAGON],
+    [EItem.DRACONIC_VISAGE]: [EMonster.KING_BLACK_DRAGON, EMonster.VORKATH__2],
     [EItem.PRINCE_BLACK_DRAGON]: [],
 
     // Kraken
@@ -264,10 +312,18 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.HILL_GIANT_CLUB]: [],
 
     // Phantom Muspah
+    [EItem.MUPHIN]: [],
     [EItem.VENATOR_SHARD]: [],
+    [EItem.ANCIENT_ICON]: [],
 
     // Royal Titans
-    // TODO: Missing royal titan drops
+    [EItem.BRAN]: [],
+    [EItem.DEADEYE_PRAYER_SCROLL]: [],
+    [EItem.MYSTIC_VIGOUR_PRAYER_SCROLL]: [],
+    [EItem.GIANTSOUL_AMULET]: [],
+    [EItem.ICE_ELEMENT_STAFF_CROWN]: [],
+    [EItem.FIRE_ELEMENT_STAFF_CROWN]: [],
+
 
     // Sarachnis
     [EItem.JAR_OF_EYES]: [],
@@ -275,23 +331,37 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.SRARACHA]: [],
 
     // Scurrius
-    // TODO: Missing scurrius spine
+    [EItem.SCURRIUS_SPINE]: [],
+    [EItem.SCURRY]: [],
 
     // Skotizo
     [EItem.JAR_OF_DARKNESS]: [],
+    [EItem.DARK_CLAW]: [],
     [EItem.SKOTOS]: [],
 
     // Thermonuclear Smoke Devil
+    [EItem.PET_SMOKE_DEVIL]: [],
     [EItem.OCCULT_NECKLACE]: [EMonster.THERMONUCLEAR_SMOKE_DEVIL, EMonster.SMOKE_DEVIL],
     [EItem.SMOKE_BATTLESTAFF]: [],
     [EItem.JAR_OF_SMOKE]: [],
 
     // Vorkath
+    [EItem.VORKI]: [],
     [EItem.SKELETAL_VISAGE]: [EMonster.VORKATH__2],
     [EItem.JAR_OF_DECAY]: [],
     [EItem.DRAGONBONE_NECKLACE]: [],
 
+    // Yama
+    [EItem.YAMI]: [],
+    [EItem.OATHPLATE_HELM]: [],
+    [EItem.OATHPLATE_CHEST]: [],
+    [EItem.OATHPLATE_LEGS]: [],
+    [EItem.SOULFLAME_HORN]: [],
+
     // Zulrah
+    [EItem.PET_SNAKELING]: [],
+    [EItem.TANZANITE_MUTAGEN]: [],
+    [EItem.MAGMA_MUTAGEN]: [],
     [EItem.JAR_OF_SWAMP]: [],
     [EItem.MAGIC_FANG]: [],
     [EItem.SERPENTINE_VISAGE]: [],
@@ -302,11 +372,4 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.DRAGON_CHAINBODY__2]: [EMonster.KALPHITE_QUEEN, EMonster.THERMONUCLEAR_SMOKE_DEVIL, EMonster.CHOKE_DEVIL, EMonster.NUCLEAR_SMOKE_DEVIL, EMonster.DUST_DEVIL, EMonster.SMOKE_DEVIL],
     [EItem.DRAGON_2H_SWORD]: [EMonster.CHAOS_ELEMENTAL, EMonster.SCORPIA, EMonster.CALLISTO, EMonster.KALPHITE_QUEEN, EMonster.VENENATIS__2, EMonster.VETION, EMonster.ARTIO, EMonster.CALVARION, EMonster.SPINDEL],
     [EItem.DRAGON_PICKAXE]: [EMonster.CHAOS_ELEMENTAL, EMonster.CALLISTO__2, EMonster.KALPHITE_QUEEN, EMonster.VENENATIS__2, EMonster.VETION__2, EMonster.ARTIO, EMonster.CALVARION, EMonster.SPINDEL, EMonster.KING_BLACK_DRAGON],
-
-
-
-    // DEBUG
-    [EItem.COWHIDE]: [EMonster.COW, EMonster.COW_CALF],
-    [EItem.RAW_BEEF]: [EMonster.COW, EMonster.COW_CALF],
-    [EItem.BONES]: [EMonster.COW, EMonster.COW_CALF],
 }
