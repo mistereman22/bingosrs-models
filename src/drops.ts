@@ -40,6 +40,14 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.MASORI_BODY]: [],
     [EItem.MASORI_MASK]: [],
     [EItem.TUMEKENS_SHADOW_UNCHARGED]: [],
+    [EItem.MASORI_CRAFTING_KIT]: [],
+    [EItem.MENAPHITE_ORNAMENT_KIT]: [],
+    [EItem.CURSED_PHALANX]: [],
+    [EItem.REMNANT_OF_AKKHA]: [],
+    [EItem.REMNANT_OF_BABA]: [],
+    [EItem.REMNANT_OF_KEPHRI]: [],
+    [EItem.REMNANT_OF_ZEBAK]: [],
+    [EItem.ANCIENT_REMNANT]: [],
 
     // DT2
     // Duke Sucellus
@@ -367,9 +375,56 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.SERPENTINE_VISAGE]: [],
     [EItem.TANZANITE_FANG]: [],
 
-
-    // Misc shared
+    // Bosses shared
     [EItem.DRAGON_CHAINBODY__2]: [EMonster.KALPHITE_QUEEN, EMonster.THERMONUCLEAR_SMOKE_DEVIL, EMonster.CHOKE_DEVIL, EMonster.NUCLEAR_SMOKE_DEVIL, EMonster.DUST_DEVIL, EMonster.SMOKE_DEVIL],
     [EItem.DRAGON_2H_SWORD]: [EMonster.CHAOS_ELEMENTAL, EMonster.SCORPIA, EMonster.CALLISTO, EMonster.KALPHITE_QUEEN, EMonster.VENENATIS__2, EMonster.VETION, EMonster.ARTIO, EMonster.CALVARION, EMonster.SPINDEL],
     [EItem.DRAGON_PICKAXE]: [EMonster.CHAOS_ELEMENTAL, EMonster.CALLISTO__2, EMonster.KALPHITE_QUEEN, EMonster.VENENATIS__2, EMonster.VETION__2, EMonster.ARTIO, EMonster.CALVARION, EMonster.SPINDEL, EMonster.KING_BLACK_DRAGON],
+
+    // Slayer
+    [EItem.ETERNAL_GEM]: [],
+    [EItem.IMBUED_HEART]: [],
+    [EItem.DUST_BATTLESTAFF]: [],
+    [EItem.MIST_BATTLESTAFF]: [],
+    [EItem.DARK_BOW]: [],
+    [EItem.BASILISK_JAW]: [],
+    [EItem.WARPED_SCEPTRE_UNCHARGED]: [],
+    [EItem.DAGONHAI_HAT]: [],
+    [EItem.DAGONHAI_ROBE_TOP]: [],
+    [EItem.DAGONHAI_ROBE_BOTTOM]: [],
+
+    // Elder Chaos Druids
+    [EItem.ELDER_CHAOS_TOP]: [],
+    [EItem.ELDER_CHAOS_ROBE]: [],
+    [EItem.ELDER_CHAOS_HOOD]: [],
+
+    // Revenants
+    [EItem.VIGGORAS_CHAINMACE_U]: [],
+    [EItem.CRAWS_BOW_U]: [],
+    [EItem.THAMMARONS_SCEPTRE_U]: [],
+    [EItem.AMULET_OF_AVARICE]: [],
+    [EItem.ANCIENT_RELIC]: [],
+    [EItem.ANCIENT_EFFIGY]: [],
+    [EItem.ANCIENT_MEDALLION]: [],
+    [EItem.ANCIENT_STATUETTE]: [],
+    [EItem.ANCIENT_TOTEM]: [],
+    [EItem.ANCIENT_EMBLEM]: [],
+
+    // Tormented Demons
+    [EItem.TORMENTED_SYNAPSE]: [],
+    [EItem.BURNING_CLAW]: [],
+
+    // Tzhaar
+    [EItem.OBSIDIAN_CAPE]: [],
+    [EItem.TOKTZKETXIL]: [],
+    [EItem.TZHAARKETOM]: [],
+    [EItem.TOKTZXILAK]: [],
+    [EItem.TOKTZXILEK]: [],
+    [EItem.TOKTZMEJTAL]: [],
+    [EItem.TOKTZXILUL]: [],
+    [EItem.OBSIDIAN_HELMET]: [],
+    [EItem.OBSIDIAN_PLATEBODY]: [],
+    [EItem.OBSIDIAN_PLATELEGS]: [],
+
+    // Misc
+    [EItem.DRAGON_WARHAMMER]: [],
 }
