@@ -427,4 +427,7 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
 
     // Misc
     [EItem.DRAGON_WARHAMMER]: [],
+
+    [EItem.FISH_BARREL]: [],
+    [EItem.DRAGON_AXE]: [],
 }
