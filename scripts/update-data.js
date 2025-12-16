@@ -4,8 +4,13 @@ import * as path from "node:path";
 
 async function saveFileAsync(filePath, content) {
     const dir = path.dirname(filePath);
-    if (!fs.existsSync(dir)) {
-        fs.mkdirSync(dir, { recursive: true });
+    const dirExists = await fs.promises
+        .access(dir)
+        .then(() => true)
+        .catch(() => false);
+
+    if (!dirExists) {
+        await fs.promises.mkdir(dir, { recursive: true });
     }
 
     await fs.promises.writeFile(filePath, content, "utf8");
