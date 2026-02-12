@@ -12741,4 +12741,7 @@ export enum EMonster {
   ZEMOUREGAL__5 = 15564,
   GUARD__300 = 15566,
   GUARD__301 = 15568,
+  KETZEK__3 = 15572,
+  KETZEK__4 = 15573,
+  TZTOKJAD__4 = 15574,
 }
