@@ -1,6 +1,6 @@
 {
   "name": "@bingosrs/models",
-  "version": "1.0.29",
+  "version": "1.0.30",
   "description": "Auto generated model package for use with BingOSRS",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
