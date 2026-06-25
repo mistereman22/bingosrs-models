@@ -12857,4 +12857,5 @@ export enum EMonster {
   ELIDINIS_WARDEN__11 = 15698,
   TZTOKJAD__5 = 15699,
   YAMA__5 = 15700,
+  DEMON_BUTLER__5 = 15711,
 }
