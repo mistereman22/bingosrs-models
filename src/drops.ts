@@ -9,6 +9,8 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.TWISTED_ANCESTRAL_COLOUR_KIT]: [],
     [EItem.ARCANE_PRAYER_SCROLL]: [],
     [EItem.DEXTEROUS_PRAYER_SCROLL]: [],
+    [EItem.TWISTED_BUCKLER]: [],
+    [EItem.DRAGON_HUNTER_CROSSBOW]: [],
     [EItem.DINHS_BULWARK]: [],
     [EItem.ANCESTRAL_ROBE_BOTTOM]: [],
     [EItem.ANCESTRAL_ROBE_TOP]: [],
