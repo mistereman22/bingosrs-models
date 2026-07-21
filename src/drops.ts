@@ -433,6 +433,7 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.MAGIC_FANG]: [],
     [EItem.SERPENTINE_VISAGE]: [],
     [EItem.TANZANITE_FANG]: [],
+    [EItem.UNCUT_ONYX]: [EMonster.TEKTON, EMonster.ZULRAH],
 
     // Bosses shared
     [EItem.DRAGON_CHAINBODY__2]: [
@@ -486,6 +487,9 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.GULL]: [],
     [EItem.JAR_OF_FEATHERS]: [],
     [EItem.AQUANITE_TENDON]: [],
+    [EItem.GRANITE_MAUL]: [],
+    [EItem.BLACK_MASK_10]: [],
+    [EItem.BLOOD_SHARD]: [],
 
     // Elder Chaos Druids
     [EItem.ELDER_CHAOS_TOP]: [],
