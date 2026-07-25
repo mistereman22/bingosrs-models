@@ -1025,4 +1025,9 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.ZAMORAK_PAGE_3]: [],
     [EItem.ZAMORAK_PAGE_4]: [],
 
+    // Sailing
+    [EItem.BROKEN_DRAGON_HOOK]: [],
+    [EItem.DRAGON_KEEL_PARTS]: [],
+    [EItem.DRAGON_CANNON_BARREL]: [],
+    [EItem.BOTTLED_STORM]: [],
 };
