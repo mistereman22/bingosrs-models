@@ -50,6 +50,7 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.REMNANT_OF_KEPHRI]: [],
     [EItem.REMNANT_OF_ZEBAK]: [],
     [EItem.ANCIENT_REMNANT]: [],
+    [EItem.FOSSILISED_DUNG]: [],
 
     // DT2
     // Duke Sucellus
@@ -527,9 +528,26 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     // Misc
     [EItem.DRAGON_WARHAMMER]: [],
 
-    [EItem.FISH_BARREL]: [],
     [EItem.DRAGON_AXE]: [],
     [EItem.ZENYTE_SHARD]: [],
+
+    // Wintertodt
+    [EItem.TOME_OF_FIRE_EMPTY]: [],
+    [EItem.WARM_GLOVES]: [],
+    [EItem.BRUMA_TORCH]: [],
+    [EItem.PYROMANCER_HOOD]: [],
+    [EItem.PYROMANCER_GARB]: [],
+    [EItem.PYROMANCER_ROBE]: [],
+    [EItem.PYROMANCER_BOOTS]: [],
+    [EItem.PHOENIX]: [],
+
+    // Tempoross
+    [EItem.TOME_OF_WATER_EMPTY]: [],
+    [EItem.TACKLE_BOX]: [],
+    [EItem.FISH_BARREL]: [],
+    [EItem.BIG_HARPOONFISH]: [],
+    [EItem.TINY_TEMPOR]: [],
+    [EItem.DRAGON_HARPOON]: [],
 
     // Clue Scrolls
     // Easy
@@ -1030,4 +1048,22 @@ export const MonsterDrops: Partial<Record<EItem, EMonster[]>> = {
     [EItem.DRAGON_KEEL_PARTS]: [],
     [EItem.DRAGON_CANNON_BARREL]: [],
     [EItem.BOTTLED_STORM]: [],
+
+    // Brutus
+    [EItem.MOOLETA]: [],
+    [EItem.BOTTOMLESS_MILK_BUCKET_EMPTY]: [],
+    [EItem.COW_SLIPPERS]: [],
+    [EItem.BEEF]: [],
+
+    // Maggot King
+    [EItem.ELDER_VENATOR_FANG]: [],
+    [EItem.CRIMSON_KISTEN]: [],
+    [EItem.MAGGOT_MARQUESS]: [],
+    [EItem.VENATOR_TOOTH]: [],
+    [EItem.VENATOR_FANG]: [],
+
+    // Mad Angel
+    [EItem.HALLOWFELL]: [],
+    [EItem.JAR_OF_LIGHT]: [],
+    [EItem.AGGY]: [],
 };
